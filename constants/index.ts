@@ -60,7 +60,7 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Impact',
-    links: ['Travelling', 'Climbing', 'Hiking', 'Trekking'],
+    links: ['Roadmap', 'Traction', 'Journey'],
   },
 ];
 
