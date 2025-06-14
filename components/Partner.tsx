@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import React from 'react'
-import Button from './Button'
+import Image from "next/image";
+import React from "react";
+import Button from "./Button";
 
 const PartnerWithUs = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24 pb-[300px] ">
+    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24 pb-[300px]">
       <div className="max-container padding-container relative w-full flex items-start justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
@@ -16,7 +16,7 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        <div className="z-20 flex w-full flex-col lg:w-[60%] relative lg:top-20 lg:ml-12 pl-16 ">
+        <div className="z-20 flex w-full flex-col lg:w-[60%] relative lg:top-20 lg:ml-12 pl-16">
           <p className="text-green-600 uppercase font-semibold tracking-wide">
             Call to Action
           </p>
@@ -26,7 +26,7 @@ const PartnerWithUs = () => {
             transform healthcare
           </h2>
 
-          <ul className="mt-10 space-y-4 text-gray-600 regular-20 ">
+          <ul className="mt-10 space-y-4 text-gray-600 regular-20">
             <li>Tap into the $462B market of Primary Care advice</li>
             <li>Bring healthcare to millions of people who don’t have it today</li>
           </ul>
@@ -34,23 +34,24 @@ const PartnerWithUs = () => {
           <p className="mt-10 space-y-4 text-gray-600 bold-20">
             Together, we can build SensAI and start this journey.
           </p>
-          <p className="font-semibold text-gray-800 mt-6 pb-16">
-          </p>
 
-          <Button
-            type="button"
-            title="Partner with us"
-            variant="btn_green"
-            href="#getapp"
-          />
+          {/* Increased top margin here */}
+          <div className="mt-20">
+            <Button
+              type="button"
+              title="Partner with us"
+              variant="btn_green"
+              href="mailto:deosaimedtech@gmail.com"
+            />
+          </div>
         </div>
       </div>
-
     </section>
+  );
+};
 
-  )
-}
+export default PartnerWithUs;
 
-export default PartnerWithUs
+
 
 

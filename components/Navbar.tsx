@@ -6,8 +6,9 @@ import Button from "./Button"
 const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/home">
-        <Image src="/sensai.svg" alt="logo" width={200} height={100} />
+      {/* logo now points at “/” */}
+      <Link href="/">
+        <Image src="/sensai.svg" alt="logo" width={300} height={150} />
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
@@ -23,13 +24,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-
       <div className="lg:flexCenter hidden">
         <Button 
           type="button"
           title="Partner with us"
           variant="btn_green"
-          href="#getapp"
+          href="#partner"
         />
       </div>
 

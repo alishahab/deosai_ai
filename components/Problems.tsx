@@ -65,10 +65,12 @@ const FlipCard = ({
       >
         {/* Front */}
         <div
-          className="absolute inset-0 bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-center"
+          className="absolute inset-0 bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-between"
           style={{ backfaceVisibility: "hidden" }}
         >
-          <h3 className={`text-[56px] font-bold mb-4 ${textClass}`}>
+          <h3
+            className={`text-[56px] font-bold whitespace-pre-line ${textClass}`}
+          >
             {stat}
           </h3>
           <p className="text-[24px] font-bold text-gray-700">
@@ -99,7 +101,6 @@ const FlipCard = ({
 export default function Challenges() {
   return (
     <section className="mt-20 bg-gray-100 py-20">
-      {/* container to align heading left but keep cards centered */}
       <div className="max-container px-4 mx-auto">
         <h2 className="text-[64px] font-bold text-black mb-12 text-left">
           Problem Statement
@@ -113,6 +114,7 @@ export default function Challenges() {
     </section>
   );
 }
+
 
 
 

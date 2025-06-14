@@ -39,18 +39,7 @@ const teamMembers: Person[] = [
       "Founder of Spinacure, an integrated-spine startup",
     ],
   },
-  {
-    id: 3,
-    name: "Agha Ali Raza",
-    education: "PhD",
-    role: "Machine Learning & AI Guru • NLP Specialist • Safari Lover",
-    imageUrl: "/team/agha.svg",
-    details: [
-      "Asst. Professor of CS at LUMS",
-      "Founding Director, Center for Speech & Language Technologies",
-      "PhD in Machine Learning from CMU",
-    ],
-  },
+  
   {
     id: 4,
     name: "Suleman Shahid",
@@ -151,6 +140,18 @@ const advisoryMembers: Person[] = [
       "Faculty, Dept of Psychiatry, Harvard Med School",
       "Psychiatry Residency, Cambridge Health Alliance",
       "MD & BA, University of Washington",
+    ],
+  },
+  {
+    id: 5,
+    name: "Agha Ali Raza",
+    education: "PhD",
+    role: "Advisor",
+    imageUrl: "/team/agha.svg",
+    details: [
+      "Asst. Professor of CS at LUMS",
+      "Founding Director, Center for Speech & Language Technologies",
+      "PhD in Machine Learning from CMU",
     ],
   },
 ];

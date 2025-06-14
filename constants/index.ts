@@ -1,6 +1,7 @@
 // NAVIGATION
+
 export const NAV_LINKS = [
-  { href: "/home", key: 'home', label: 'Home', },
+  { href: "/", key: 'home', label: 'Home' },
   { href: "/impact", key: 'explore', label: 'Impact' },
   { href: "/product", key: 'product', label: 'Product' },
   { href: "/about", key: 'about', label: 'About' },
@@ -68,7 +69,7 @@ export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
     { label: 'Call', value: '+19498786835' },
-    { label: 'Email', value: 'demo@email.com' },
+    { label: 'Email', value: 'deosaimedtech@gmail.com' },
   ],
 };
 

@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">DEOSAI | Demo Website by Samie Ahmad</p>
+        <p className="regular-14 w-full text-center text-gray-30">DEOSAI MEDTECH</p>
       </div>
     </footer>
   )
