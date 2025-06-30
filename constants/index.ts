@@ -16,7 +16,10 @@ export const PEOPLE_URL = [
   '/person-4.png',
 ];
 
-
+// FEATURES SECTION
+export const FEATURES = [
+  
+];
 
 // FOOTER SECTION
 export const FOOTER_LINKS = [
