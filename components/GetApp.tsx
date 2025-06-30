@@ -24,7 +24,7 @@ const GetApp = () => {
 
           <div className="flex w-full flex-col gap-6 xl:flex-row">
             <p className="regular-16 text-white xl:flex-1">
-              Automates medical notes, assessments and treatment plans for existing physicians.
+              Our flagship product, SensAI automates medical notes, assessments and treatment plans for existing physicians.
             </p>
             <p className="regular-16 text-white xl:flex-1">
               Expands to any local region in 6 to 12 weeks — upload prevalence patterns and train on local language.

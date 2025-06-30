@@ -39,7 +39,7 @@ const PartnerWithUs = () => {
           <div className="mt-20">
             <Button
               type="button"
-              title="Partner with us"
+              title="Click here to start a conversation"
               variant="btn_green"
               href="mailto:deosaimedtech@gmail.com"
             />

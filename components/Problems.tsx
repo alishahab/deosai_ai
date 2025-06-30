@@ -14,10 +14,10 @@ interface Challenge {
 const challengeData: Challenge[] = [
   {
     id: 1,
-    stat: "35% of doctors’ time",
-    description: "Spent on documenting patient encounters",
+    stat: "62% of doctors cite",
+    description: "Paperwork contributes most to burnout",
     detail:
-      "Physicians spend over a third of their clinical hours buried in paperwork—time that could be better spent diagnosing, consulting, and building patient trust.",
+      "Almost two thirds of all Physicians cite paperwork as the biggest contributer of burnout, leading to much lower productivity and work effciency.",
     textClass: "text-green-700",
     bgClass: "bg-green-700",
   },
