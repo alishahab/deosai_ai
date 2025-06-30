@@ -39,6 +39,19 @@ const teamMembers: Person[] = [
       "Founder of Spinacure, an integrated-spine startup",
     ],
   },
+  {
+    id: 3,
+    name: "Usman Bhatty",
+    education: "MBBS MBA",
+    role: "Marketing Guru • Operations Exec • Motorcyclist",
+    imageUrl: "/team/usman.svg",
+    details: [
+      "COO at Nutrico Morinaga", 
+      "Adjunct Faculty in Marketing at LUMS", 
+      "MBA from MIT Sloan School of Management", 
+      "MBA from LUMS, MBBS from King Edward Medical College",
+    ],
+  },
   
   {
     id: 4,
@@ -147,11 +160,24 @@ const advisoryMembers: Person[] = [
     name: "Agha Ali Raza",
     education: "PhD",
     role: "Advisor",
-    imageUrl: "/team/agha.svg",
+    imageUrl: "/advisory/agha.svg",
     details: [
       "Asst. Professor of CS at LUMS",
       "Founding Director, Center for Speech & Language Technologies",
       "PhD in Machine Learning from CMU",
+    ],
+  },
+  {
+    id: 6,
+    name: "Agha Ali Raza",
+    education: "BS",
+    role: "Advisor",
+    imageUrl: "/advisory/zafar.svg",
+    details: [
+      "CEO, Sofizar",
+      "CEO, Daria Technologies",
+      "CEO, Engro Digital",
+      "BS, Caltech",
     ],
   },
 ];
