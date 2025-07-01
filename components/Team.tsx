@@ -52,9 +52,22 @@ const teamMembers: Person[] = [
       "MBA from LUMS, MBBS from King Edward Medical College",
     ],
   },
-  
   {
     id: 4,
+    name: "Zafar Khan",
+    education: "BS",
+    role: "Serial Entrepreneur • Tech Whiz • Equestrian",
+    imageUrl: "/team/zafar.svg",
+    details: [
+      "CEO, Sofizar",
+      "CEO, Daria Technologies",
+      "CEO, Engro Digital",
+      "BS, Caltech",
+    ],
+  },
+  
+  {
+    id: 5,
     name: "Suleman Shahid",
     education: "PhD",
     role: "UX/UI Expert • Traveler & Dreamer",
@@ -66,7 +79,7 @@ const teamMembers: Person[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Adrian Koren",
     education: "MS",
     role: "Software Dev Magician • Traveler",
@@ -78,7 +91,7 @@ const teamMembers: Person[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Katie Shields",
     education: "MBA",
     role: "Security & Compliance Lead • Engineer at Heart • Hiker",
@@ -90,7 +103,7 @@ const teamMembers: Person[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Wenhsiu Hassan",
     education: "MS",
     role: "Business Dev • Techie • Photographer",
@@ -167,19 +180,7 @@ const advisoryMembers: Person[] = [
       "PhD in Machine Learning from CMU",
     ],
   },
-  {
-    id: 6,
-    name: "Agha Ali Raza",
-    education: "BS",
-    role: "Advisor",
-    imageUrl: "/advisory/zafar.svg",
-    details: [
-      "CEO, Sofizar",
-      "CEO, Daria Technologies",
-      "CEO, Engro Digital",
-      "BS, Caltech",
-    ],
-  },
+  
 ];
 
 const PersonFlipCard: React.FC<Person> = ({
