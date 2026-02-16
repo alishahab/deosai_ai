@@ -22,25 +22,26 @@ const PartnerWithUs = () => {
           </p>
 
           <h2 className="bold-40 lg:bold-64 mt-2">
-            Partner with us to <br className="hidden lg:block" />
-            transform healthcare
+            Better Documentation. Stronger Risk Capture. Happier Clinicians.
           </h2>
 
-          <ul className="mt-10 space-y-4 text-gray-600 regular-20">
-            <li>Tap into the $462B market of Primary Care advice</li>
-            <li>Bring healthcare to millions of people who don’t have it today</li>
-          </ul>
-
-          <p className="mt-10 space-y-4 text-gray-600 bold-20">
-            Together, we can build SensAI and start this journey.
+          <p className="mt-10 text-gray-600 regular-20">
+            SensAI empowers care teams to document smarter, capture risk
+            completely, and focus on patient care — while helping organizations
+            thrive in value-based payment models.
           </p>
 
-          {/* Increased top margin here */}
-          <div className="mt-20">
+          <div className="mt-20 flex w-full flex-col gap-4 whitespace-nowrap xl:flex-row">
             <Button
               type="button"
-              title="Click here to start a conversation"
+              title="Schedule a Demo"
               variant="btn_green"
+              href="mailto:deosaimedtech@gmail.com"
+            />
+            <Button
+              type="button"
+              title="Talk to Our Team"
+              variant="btn_dark_green"
               href="mailto:deosaimedtech@gmail.com"
             />
           </div>
@@ -51,7 +52,6 @@ const PartnerWithUs = () => {
 };
 
 export default PartnerWithUs;
-
 
 
 
