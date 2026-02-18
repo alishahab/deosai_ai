@@ -9,39 +9,44 @@ interface Challenge {
   detail: string;
   textClass: string;
   bgClass: string;
+  icon: "documentation" | "risk" | "workflow";
 }
 
 const challengeData: Challenge[] = [
   {
     id: 1,
-    stat: "62% of doctors cite",
-    description: "Paperwork contributes most to burnout",
+    stat: "Overload",
+    description: "Documentation",
     detail:
-      "Almost two thirds of all Physicians cite paperwork as the biggest contributer of burnout, leading to much lower productivity and work effciency.",
+      "The problem\nPhysicians spend over 2 hours on EHR documentation for every hour of patient care. Manual note-taking and administrative burden consume clinical time.\n\nThe result\n• Clinician burnout increases\n• Less time is spent with patients\n• Healthcare delivery becomes less efficient",
     textClass: "text-green-700",
     bgClass: "bg-green-700",
+    icon: "documentation",
   },
   {
     id: 2,
-    stat: "2 hours per day",
-    description: "After clinical hours spent on documentation",
+    stat: "Lost Revenue",
+    description: "Missed Risk",
     detail:
-      "Each evening, doctors devote roughly two extra hours to charting and notes, cutting into personal time and accelerating burnout over the long run.",
+      "The problem\nRisk conditions are frequently under-documented or miscoded. Without complete documentation, health systems fail to capture the true clinical complexity of patients.\n\nThe result\n• Lost reimbursement\n• Lower RAF scores\n• Reduced value-based revenue",
     textClass: "text-green-600",
     bgClass: "bg-green-600",
+    icon: "risk",
   },
   {
     id: 3,
-    stat: "90% of doctors’ notes",
-    description: "Contain at least one error",
+    stat: "Workflows",
+    description: "Fragmented",
     detail:
-      "Nearly all medical records include mistakes—from typos to critical omissions—jeopardizing patient safety and forcing costly follow-up clarifications.",
+      "The problem\nCare teams face inbox overload and disconnected systems. Health organizations lack real-time intelligence to identify risk and act efficiently.\n\nThe result\n• Operational inefficiencies\n• Increased administrative burden\n• Lower quality longitudinal patient care",
     textClass: "text-green-500",
     bgClass: "bg-green-500",
+    icon: "workflow",
   },
 ];
 
 const FlipCard = ({
+  id,
   stat,
   description,
   detail,
@@ -49,6 +54,33 @@ const FlipCard = ({
   bgClass,
 }: Challenge) => {
   const [flipped, setFlipped] = useState(false);
+
+  const renderIcon = () => {
+    if (id === 1) {
+      return (
+        <svg viewBox="0 0 24 24" className="h-12 w-12" fill="none" aria-hidden="true">
+          <rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" strokeWidth="1.8" />
+          <path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        </svg>
+      );
+    }
+
+    if (id === 2) {
+      return (
+        <svg viewBox="0 0 24 24" className="h-12 w-12" fill="none" aria-hidden="true">
+          <path d="M4 18l6-6 4 4 6-8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M16 8h4v4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
+    }
+
+    return (
+      <svg viewBox="0 0 24 24" className="h-12 w-12" fill="none" aria-hidden="true">
+        <path d="M3 7h12M3 12h10M3 17h8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M17 7l4 0M17 12l4 0M17 17l4 0" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    );
+  };
 
   return (
     <div
@@ -65,17 +97,15 @@ const FlipCard = ({
       >
         {/* Front */}
         <div
-          className="absolute inset-0 bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-between"
+          className="absolute inset-0 bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-center items-center"
           style={{ backfaceVisibility: "hidden" }}
         >
+          <div className={`mb-6 ${textClass}`}>{renderIcon()}</div>
           <h3
-            className={`text-[56px] font-bold whitespace-pre-line ${textClass}`}
+            className={`text-[34px] leading-tight font-bold whitespace-pre-line text-center ${textClass}`}
           >
-            {stat}
+            {`${description}\n${stat}`}
           </h3>
-          <p className="text-[24px] font-bold text-gray-700">
-            {description}
-          </p>
         </div>
 
         {/* Back */}
@@ -114,7 +144,3 @@ export default function Challenges() {
     </section>
   );
 }
-
-
-
-

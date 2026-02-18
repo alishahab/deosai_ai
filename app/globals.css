@@ -135,7 +135,9 @@ body {
 
   /* Hero */
   .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+    background-image: url('/hero.svg');
+    @apply absolute inset-0 h-full w-full bg-contain bg-center bg-no-repeat;
+    background-size: 115% auto;
   }
 
   /* Camp */

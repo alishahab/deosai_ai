@@ -12,7 +12,7 @@ export default function Home() {
       <div id="hero">
         <Hero />
       </div>
-      <div id="problems">
+      <div id="problems" className="mt-24 lg:mt-32">
         <Problems />
       </div>
       <div id="getapp">
@@ -30,5 +30,3 @@ export default function Home() {
     </>
   )
 }
-
-

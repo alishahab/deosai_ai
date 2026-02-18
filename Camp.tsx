@@ -59,9 +59,6 @@ const Camp = () => {
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
             <strong>Elevating care,</strong> scaling expertise.
           </h2>
-          <p className="regular-14 xl:regular-16 mt-5 text-white">
-            SensAI records doctor-patient conversations, turns them into flawless notes, and learns from each edit—boosting care while cutting paperwork. In 6–12 weeks it localises to new languages, growing a shared knowledge base that preserves physicians’ expertise and steadily elevates primary-care standards.
-          </p>
           <Image 
             src="/quote.svg"
             alt="camp-2"
