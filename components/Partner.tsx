@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
+import Modal from "./Modal";
 
 const PartnerWithUs = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24 pb-[300px]">
       <div className="max-container padding-container relative w-full flex items-start justify-end">
@@ -36,15 +39,22 @@ const PartnerWithUs = () => {
               type="button"
               title="Schedule a Demo"
               variant="btn_green"
-              href="mailto:deosaimedtech@gmail.com"
+              onClick={() => setOpen(true)}
             />
             <Button
               type="button"
               title="Talk to Our Team"
               variant="btn_dark_green"
-              href="mailto:deosaimedtech@gmail.com"
+              {/*href="mailto:deosaimedtech@gmail.com"*/}
+              href="mailto:hello@deosai.ai"
             />
           </div>
+          <Modal
+            open={open}
+            url="https://www.cognitoforms.com/WenhsiuHassan/BasicContactForm"
+            onClose={() => setOpen(false)}
+            title="Schedule a Demo"
+          />
         </div>
       </div>
     </section>

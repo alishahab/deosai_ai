@@ -4,9 +4,13 @@ const Hero = () => {
       <div className="hero-map" />
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <h1 className="bold-52 lg:bold-88">AI-Powered Synthetic Medical Intelligence</h1>
-        <p className="regular-20 mt-6 text-gray-30 xl:max-w-[700px]">
+       {/* <h1 className="bold-52 lg:bold-88">AI-Powered Synthetic Medical</h1>*/}
+       <h1 className="bold-52 lg:bold-88">More Attention for Patients. Less Time on Documentationl</h1>
+        {/* <p className="regular-20 mt-6 text-gray-30 xl:max-w-[700px]">
           Speech-to-Text | Medical Decision Support | Seamless Care Delivery
+        </p>*/}
+        <p className="regular-20 mt-6 text-gray-30 xl:max-w-[700px]">
+        Your AI clinical assistant that captures visits, drafts notes, and keeps documentation effortless.
         </p>
       </div>
 

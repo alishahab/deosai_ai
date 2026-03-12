@@ -47,8 +47,17 @@ export const FEATURES = [
       'Lots of new locations every month, because we have a worldwide community of travellers who share their best experiences',
   },
 ];
-
 // FOOTER SECTION
+export const FOOTER_LINKS = [
+  {
+    title: 'Learn More',
+    links: [
+      'Privacy Policy',
+    ],
+  },
+];
+
+{/*// FOOTER SECTION
 export const FOOTER_LINKS = [
   {
     title: 'Learn More',
@@ -63,13 +72,14 @@ export const FOOTER_LINKS = [
     title: 'Impact',
     links: ['Roadmap', 'Traction', 'Journey'],
   },
-];
+];*/}
 
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
     { label: 'Call', value: '+19498786835' },
-    { label: 'Email', value: 'deosaimedtech@gmail.com' },
+    { label: 'Email', value: 'hello@deosai.ai' },
+    {/*{ label: 'Email', value: 'deosaimedtech@gmail.com' },*/} 
   ],
 };
 
