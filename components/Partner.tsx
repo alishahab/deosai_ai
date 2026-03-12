@@ -45,7 +45,6 @@ const PartnerWithUs = () => {
               type="button"
               title="Talk to Our Team"
               variant="btn_dark_green"
-              {/*href="mailto:deosaimedtech@gmail.com"*/}
               href="mailto:hello@deosai.ai"
             />
           </div>
