@@ -52,7 +52,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Learn More',
     links: [
-      'Privacy Policy',
+      { label: 'Privacy Policy', href: '/PrivacyPolicy' },
     ],
   },
 ];
@@ -79,7 +79,7 @@ export const FOOTER_CONTACT_INFO = {
   links: [
     { label: 'Call', value: '+19498786835' },
     { label: 'Email', value: 'hello@deosai.ai' },
-    {/*{ label: 'Email', value: 'deosaimedtech@gmail.com' },*/} 
+    
   ],
 };
 
